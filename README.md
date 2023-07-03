@@ -34,4 +34,6 @@ If you wanna update all changes of Wterm, you can type the following command.
 $ git pull
 ```
 
+
+
 This is a special project, since it is modified from a previous assignment I did with a trully special person. 🌷
