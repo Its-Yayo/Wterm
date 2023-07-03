@@ -16,7 +16,7 @@ We can remember the basic 3 lays of thermodinamics.
 
 In thermodinamics, a reversible process is when there's an environment and it's system that can return to the exact state it was or they were in. An irreversible process is the opposite one. It can't be returned to the original state or to the exact states they were in. 
 
-Wterm has an optimization from a previous project with args as key and values from the CLI. Project still in development.
+Wterm has an optimization from a previous project with args as keys and values from the CLI using the ```argparse``` library. Project still in development.
 
 ## Usage
 Soon...
