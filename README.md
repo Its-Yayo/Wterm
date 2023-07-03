@@ -1,6 +1,6 @@
 # Wterm
 Wterm is a simple CLI tool to calculate a reversible and irreversible processes written in Python. It's mainly developed for
-thermodinamics purposes and it's under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) license. 
+thermodinamics testing purposes and it's under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) license. 
 
 You must have all these dependencies to run Wterm successfully. 
 
