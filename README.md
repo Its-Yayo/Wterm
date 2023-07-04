@@ -22,7 +22,7 @@ Wterm has an optimization from a previous project with args as keys and values f
 Soon...
 
 
-## Pull Requests
+## Local
 If you wanna store Wterm in your local, you can type the following commands with [git](https://git-scm.com/).
 ```shell
 $ git clone https://www.github.com/Its-Yayo/Wterm.git
@@ -33,6 +33,17 @@ If you wanna update all changes of Wterm, you can type the following command.
 ```shell
 $ git pull
 ```
+
+## Pull Requests
+First of all, you need to fork and clone the project from your Github's account. You should create a new branch with a name. 
+```
+$ git checkout -b branch-name
+```
+Once you make your changes, you should push 'em to your branch.
+```
+$ git push -u origin branch-name
+```
+Once the chances are uploaded, you should create a new Pull Request at the top of the page by clicking it. Once you do it, you should compare and review changes from the original and the new branch you created. Finally, you can submit any changes so I can accept/decline any possile implementation. 
 
 ## Notes
 This is a special project, since it is modified from a previous assignment I did with a trully special person. 🌷
