@@ -51,20 +51,23 @@ class Wterm:
 
 
 def main() -> None:
+    global action
+    wterm = Wterm()
+
     parser = argparse.ArgumentParser(description="Wterm - A tool for thermodynamics")
 
     try:
-        parser.add_argument("-w", "--work", dest='Work', help="[Reversible/Irreversible]")
-        parser.add_argument("-m", dest="M", help="[Value for M]")
-        parser.add_argument("-n", dest="N", required=True, help="[Value for N]")
-        parser.add_argument("-r", dest="R", required=True, help="[Value for R]")
-        parser.add_argument("-t", dest="T", required=True, help="[Value for T]")
-        parser.add_argument("-i", "--initial", dest="Initial", required=True, help="[Value for initial pressure]")
-        parser.add_argument("-f", "--final", dest="Final", required=True, help="[Value for final pressure]")
-        parser.add_argument("-s", "--steps", dest="Steps", help="[Value for steps]")
+        parser.add_argument("-a", "--action", dest='action', help="[Reversible/Irreversible]")
+        parser.add_argument("-m", dest="m", help="[Value for M]")
+        parser.add_argument("-n", dest="n", required=True, help="[Value for N]")
+        parser.add_argument("-r", dest="r", required=True, help="[Value for R]")
+        parser.add_argument("-t", dest="t", required=True, help="[Value for T]")
+        parser.add_argument("-i", "--initial", dest="initial", required=True, help="[Value for initial pressure]")
+        parser.add_argument("-f", "--final", dest="final", required=True, help="[Value for final pressure]")
+        parser.add_argument("-s", "--steps", dest="steps", help="[Value for steps]")
 
         args = parser.parse_args()
-        work = args.work.lower()
+        action = args.action.lower()
 
         m = args.m
         n = args.n
@@ -77,13 +80,11 @@ def main() -> None:
     except Exception as e:
         print("[X] Your instruction has an error:", e)
 
-    wterm = Wterm()
-
-    if work == "Reversible":
+    if action == "Reversible":
         wterm.reversible(n, r, t, initial, final)
         sys.exit(1)
 
-    elif work == "Irreversible":
+    elif action == "Irreversible":
         wterm.irreversible(m, n, r, t, initial, final, steps)
         sys.exit(1)
 
