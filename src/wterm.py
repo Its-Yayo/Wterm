@@ -6,6 +6,7 @@ import math
 
 current_version = "v0.0.1"
 
+
 class Wterm:
     def __init__(self) -> None:
         print(f"[x] Starting Wterm {current_version}")
@@ -48,8 +49,10 @@ class Wterm:
         work: int = -(n * r * t) * math.log(initial_p / final_p)
         return "[X] Reversible Work is: " + str(work)
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Wterm - A tool for thermodynamics")
+
     try:
         parser.add_argument("-w", "--work", dest='Work', help="[Reversible/Irreversible]")
         parser.add_argument("-m", dest="M", help="[Value for M]")
@@ -59,10 +62,34 @@ def main() -> None:
         parser.add_argument("-i", "--initial", dest="Initial", required=True, help="[Value for initial pressure]")
         parser.add_argument("-f", "--final", dest="Final", required=True, help="[Value for final pressure]")
         parser.add_argument("-s", "--steps", dest="Steps", help="[Value for steps]")
+
+        args = parser.parse_args()
+        work = args.work.lower()
+
+        m = args.m
+        n = args.n
+        r = args.r
+        t = args.t
+        initial = args.initial
+        final = args.final
+        steps = args.steps
+
     except Exception as e:
         print("[X] Your instruction has an error:", e)
 
-    pass
+    wterm = Wterm()
+
+    if work == "Reversible":
+        wterm.reversible(n, r, t, initial, final)
+        sys.exit(1)
+
+    elif work == "Irreversible":
+        wterm.irreversible(m, n, r, t, initial, final, steps)
+        sys.exit(1)
+
+    else:
+        print("[X] Invalid Action. Wterm quitting...")
+
 
 if __name__ == '__main__':
     main()
