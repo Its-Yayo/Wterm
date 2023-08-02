@@ -5,7 +5,7 @@ thermodinamics testing purposes and it's under the [GPLv3](https://www.gnu.org/l
 You must have all these dependencies to run Wterm successfully. 
 
 ```shell
-$ pip install matplotlib numpy math argparse plotly
+$ pip install math argparse 
 ```
 
 ## Basics
