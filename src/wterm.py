@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
-
 import math
 
-current_version = "v0.0.1"
-
+CURRENT = "v0.0.1"
 
 class Wterm:
     def __init__(self) -> None:
-        print(f"[x] Starting Wterm {current_version}")
+        print(f"[x] Starting Wterm {CURRENT}")
 
     def irreversible(self, m, n, r, t, initial_p, final_p, steps) -> str:
         """ Calculates the isoterm irreversible process
