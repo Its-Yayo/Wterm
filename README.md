@@ -45,5 +45,8 @@ $ git push -u origin branch-name
 ```
 Once the chances are uploaded, you should create a new Pull Request at the top of the page by clicking it. Once you do it, you should compare and review changes from the original and the new branch you created. Finally, you can submit any changes so I can accept/decline any possile implementation. 
 
+## Releases
+Soon...
+
 ## Notes
 This is a special project, since it is modified from a previous assignment I did with a trully special person. 🌷
