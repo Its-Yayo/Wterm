@@ -43,7 +43,7 @@ Once you make your changes, you should push 'em to your branch.
 ```
 $ git push -u origin branch-name
 ```
-Once the chances are uploaded, you should create a new Pull Request at the top of the page by clicking it. Once you do it, you should compare and review changes from the original and the new branch you created. Finally, you can submit any changes so I can accept/decline any possile implementation. 
+Once the chances are uploaded, you should create a new Pull Request at the top of the page by clicking it. Once you do it, you should compare and review changes from the original and the new branch you created. Finally, you can submit any changes so I can accept/decline any possible implementation. 
 
 ## Releases
 Soon...
