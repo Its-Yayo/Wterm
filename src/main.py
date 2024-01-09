@@ -4,6 +4,7 @@ import sys
 import argparse
 from wterm import Wterm
 
+# TODO: Check sum args logic
 def main() -> None:
     wterm = Wterm()
 
