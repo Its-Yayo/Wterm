@@ -5,7 +5,7 @@ import math
 # Not released yet but soon :)
 CURRENT = "v0.0.1"
 
-
+# TODO: check operations and values arg doc 
 class Wterm:
     def __init__(self) -> None:
         print(f"[x] Starting Wterm {CURRENT}")
