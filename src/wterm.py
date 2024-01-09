@@ -2,7 +2,9 @@
 
 import math
 
+# Not released yet but soon :)
 CURRENT = "v0.0.1"
+
 
 class Wterm:
     def __init__(self) -> None:
