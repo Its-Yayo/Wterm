@@ -10,7 +10,7 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description="Wterm - A tool for thermodynamics")
 
-    parser.add_argument("-a", "--action", dest='action', help="[Reversible/Irreversible]")
+    parser.add_argument("-a", "--action", dest='action', help="[Rev/Irrev] -> Reversible/Irreversible")
     parser.add_argument("-m", dest="m", help="[Value for M]")
     parser.add_argument("-n", dest="n", required=True, help="[Value for N]")
     parser.add_argument("-r", dest="r", required=True, help="[Value for R]")
@@ -30,11 +30,11 @@ def main() -> None:
     final = args.final
     steps = args.steps
 
-    if action == "reversible":
+    if action == "rev":
         wterm.reversible(n, r, t, initial, final)
         sys.exit(1)
 
-    elif action == "irreversible":
+    elif action == "irrev":
         wterm.irreversible(m, n, r, t, initial, final, steps)
         sys.exit(1)
 
