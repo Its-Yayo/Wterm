@@ -21,7 +21,7 @@ class Wterm:
             final_p: [int] =
             steps: [int] =
         Returns:
-            [str(int)] = The irreversible work
+            [str(int)] = Irreversible work
         """
         delta_p = (final_p - initial_p) / m
         values = True
@@ -43,7 +43,7 @@ class Wterm:
             initial_p: [int] =
             final_p: [int] =
         Returns:
-            [str(int)] = The reversible work
+            [str(int)] = Reversible work
         """
         work: int = -(n * r * t) * math.log(initial_p / final_p)
         return "[X] Reversible Work is: " + str(work)
