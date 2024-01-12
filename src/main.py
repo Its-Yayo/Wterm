@@ -8,7 +8,7 @@ from wterm import Wterm
 def main() -> None:
     wterm = Wterm()
 
-    parser = argparse.ArgumentParser(description="Wterm - A tool for thermodynamics")
+    parser = argparse.ArgumentParser(description="Wterm - CLI tool for thermodynamics (Our test project)")
 
     parser.add_argument("-a", "--action", dest='action', help="[Rev/Irrev] -> Reversible/Irreversible")
     parser.add_argument("-m", dest="m", help="[Value for M]")
