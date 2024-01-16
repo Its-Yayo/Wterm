@@ -31,7 +31,7 @@ $ cd Wterm
 
 If you wanna update all changes of Wterm, you can type the following command.
 ```shell
-$ git pull
+$ git pull origin
 ```
 
 ## Pull Requests
